@@ -12,7 +12,7 @@ spec:
       helm:
         valueFiles:
           - $values/helm-values/prometheus-values.yaml
-    - repoURL: https://github.com/<github-username>/argocd-gitops-repo.git
+    - repoURL: https://github.com/mohammedd2510/argocd-gitops-repo-demo.git
       targetRevision: main
       ref: values
   destination:
