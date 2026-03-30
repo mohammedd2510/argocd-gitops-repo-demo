@@ -6,7 +6,7 @@ metadata:
   labels:
     app: route-demo
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: route-demo
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: route-demo
-          image: ghcr.io/mohammedd2510/react-app-cicd:5ccaf6e6cf9549ae37b7ec35d18299d87ba36020 # {"$imagepolicy": "flux-system:react-app-cicd"}
+          image: ghcr.io/mohammedd2510/react-app-cicd:da6f3c0953392703baa2ce76f9e393996172f85f
           imagePullPolicy: Always
           ports:
             - containerPort: 80
