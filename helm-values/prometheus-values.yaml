@@ -1,0 +1,14 @@
+alertmanager:
+  enabled: false
+
+prometheus-pushgateway:
+  enabled: false
+
+server:
+  ingress:
+    enabled: true
+    hosts:
+      - prometheus.local
+
+  persistentVolume:
+    enabled: false
